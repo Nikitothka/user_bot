@@ -3,10 +3,11 @@ from pyrogram.errors import FloodWait
 
 import addons.heart_ad
 
-
 from addons import efict_run_line
 
 from pyrogram.types import ChatPermissions
+
+from scrips_for_main.replase import Rep
 
 import time
 from time import sleep
@@ -48,24 +49,29 @@ def type(_, msg):
     cnt_1 = 0
     text = ''
     line = 0
-    while line < 143:
+    cnt_string = 0
+    while cnt_string < 3:
         try:
-            if cnt_1 < 13:
+            if cnt_1 < 3:
                 msg.edit(text + efict_run_line.Run_line())
                 text = text + efict_run_line.Run_line()  # heart.split()[line]
                 cnt_1 += 1
             else:
+                text_end = ''
                 cnt_1 = 0
-                text = efict_run_line.Rename_text()
+                cnt_string +=1
+                text = Rep(cnt_string)
+                text_end += text
                 msg.edit(text + '\n')
-            sleep(0.05)
+
+            sleep(0.5)
             cnt_1 += 1
             line += 1
         except FloodWait as e:
             sleep(e.x)
     try:
-        msg.edit(heart)
-        text = heart
+        while True:
+            msg.edit(addons.heart_ad.Heart(heart))
     except FloodWait as e:
         sleep(e.x)
 
