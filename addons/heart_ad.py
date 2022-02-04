@@ -44,24 +44,57 @@ def Heart(heart):
     heart += '\n'  # 4 end
 
     #-----------------------------------------
-    for i in range(13):  # 5_start bg
+    for i in range(1):  # 5_start bg
         heart += stickers_bg  # 🔥💓💓💓💓💓💓💓💓💓💓💓🔥
+    for i in range(11):
+        heart += stickers_heart
+    for i in range(1):  # bg
+        heart += stickers_bg
     heart += '\n'  # 5 end
-    for i in range(13):  # 6_start bg
-        heart += stickers_bg  # 🔥💓💓💓💓💓💓💓💓💓💓💓🔥
-    heart += '\n'  # 5 end
-    for i in range(13):  # 7_start bg
-        heart += stickers_bg  # 🔥💓💓💓💓💓💓💓💓💓💓💓🔥
-    heart += '\n'  # 5 end
-    for i in range(13):  # 8_start bg
-        heart += stickers_bg  # 🔥💓💓💓💓💓💓💓💓💓💓💓🔥
-    heart += '\n'  # 5 end
-    for i in range(13):  # 9_start bg
-        heart += stickers_bg  # 🔥💓💓💓💓💓💓💓💓💓💓💓🔥
-    heart += '\n'  # 5 end
-    for i in range(13):  # 10_start bg
-        heart += stickers_bg  # 🔥💓💓💓💓💓💓💓💓💓💓💓🔥
-    heart += '\n'  # 5 end
+
+    for i in range(2):  # 6_start bg
+        heart += stickers_bg  #🔥🔥💓💓💓💓💓💓💓💓💓🔥🔥
+    for i in range(9):
+        heart += stickers_heart
+    for i in range(2):  # bg
+        heart += stickers_bg
+    heart += '\n'  # 6 end
+
+    for i in range(3):  # 7_start bg
+        heart += stickers_bg  #🔥🔥🔥💓💓💓💓💓💓💓🔥🔥🔥
+    for i in range(7):
+        heart += stickers_heart
+    for i in range(3):  # bg
+        heart += stickers_bg
+    heart += '\n'  # 7 end
+
+    for i in range(4):  # 8_start bg
+        heart += stickers_bg  #🔥🔥🔥🔥💓💓💓💓💓🔥🔥🔥🔥
+    for i in range(5):
+        heart += stickers_heart
+    for i in range(4):  # bg
+        heart += stickers_bg
+    heart += '\n'  # 8 end
+
+    for i in range(5):  # 9_start bg
+        heart += stickers_bg  #🔥🔥🔥🔥🔥💓💓💓🔥🔥🔥🔥🔥
+    for i in range(3):
+        heart += stickers_heart
+    for i in range(5):  # bg
+        heart += stickers_bg
+    heart += '\n'  # 9 end
+
+    for i in range(6):  # 10_start bg
+        heart += stickers_bg  #🔥🔥🔥🔥🔥🔥💓🔥🔥🔥🔥🔥🔥
+    for i in range(1):
+        heart += stickers_heart
+    for i in range(6):  # bg
+        heart += stickers_bg
+    heart += '\n'  # 10 end
+
+    for i in range(13):  # 11_start bg
+        heart += stickers_bg  #🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    heart += '\n'  # 11 end
 
     #print(heart)
     return heart
@@ -74,8 +107,8 @@ Heart(heart)
 #                   '🔥💓💓💓💓💓💓💓💓💓💓💓🔥'+'\n' \4
 #                   '🔥💓💓💓💓💓💓💓💓💓💓💓🔥' + '\n' \5
 #                   '🔥🔥💓💓💓💓💓💓💓💓💓🔥🔥' + '\n' \6
-#                   '🔥🔥🔥💓💓💓💓💓💓💓🔥🔥🔥' + '\n'\
-#                   '🔥🔥🔥🔥💓💓💓💓💓🔥🔥🔥🔥' + '\n' \
-#                   '🔥🔥🔥🔥🔥💓💓💓🔥🔥🔥🔥🔥' + '\n'\
-#                   '🔥🔥🔥🔥🔥🔥💓🔥🔥🔥🔥🔥🔥' + '\n' \
-#                   '🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥' + '\n
+#                   '🔥🔥🔥💓💓💓💓💓💓💓🔥🔥🔥' + '\n'\7
+#                   '🔥🔥🔥🔥💓💓💓💓💓🔥🔥🔥🔥' + '\n' \8
+#                   '🔥🔥🔥🔥🔥💓💓💓🔥🔥🔥🔥🔥' + '\n'\9
+#                   '🔥🔥🔥🔥🔥🔥💓🔥🔥🔥🔥🔥🔥' + '\n' \10
+#                   '🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥' + '\n11
