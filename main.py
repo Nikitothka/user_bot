@@ -69,11 +69,11 @@ def type(_, msg):
             line += 1
         except FloodWait as e:
             sleep(e.x)
-    try:
-        while True:
+    while True:
+        try:
             msg.edit(addons.heart_ad.Heart(heart))
-    except FloodWait as e:
-        sleep(e.x)
+        except FloodWait as e:
+            sleep(e.x)
 
 
 app.run()
