@@ -26,7 +26,7 @@ def type(_, msg, heart, addons=None):
     #count = int(orig_text)
     tbp = ""  # to be printed
     heart = ''
-    heart = addons.heart.Heart(heart)
+    heart = addons.heart_ad.Heart(heart)
     # # heart =\
     #                 '🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥'+'\n' \
     #                 '🔥🔥🔥💓💓🔥🔥🔥💓💓🔥🔥🔥'+'\n' \
