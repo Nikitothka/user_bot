@@ -1,8 +1,8 @@
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 
-from addons import heart_ad
-from addons import stickers_All
+import addons.heart_ad
+
 
 from addons import efict_run_line
 
@@ -22,8 +22,11 @@ def echo(client, message):
 
 
 @app.on_message(filters.command("heart", prefixes=".") & filters.me)
-def type(_, msg, heart, addons=None):
-    orig_text = msg.text.split(".heart ", maxsplit=1)[1]
+def type(_, msg):
+    try:
+        orig_text = msg.text.split(".heart ", maxsplit=1)[1]
+    except:
+        orig_text = 1
     print(orig_text)
     # count = int(orig_text)
     tbp = ""  # to be printed
