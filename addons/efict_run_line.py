@@ -7,7 +7,6 @@ def Run_line():
     return add_text
 def Rename_text():
     s = ''
-    for i in range(13):
+    for i in range(3):
         s += choice(stick.All)
     return s
-print(Rename_text())
