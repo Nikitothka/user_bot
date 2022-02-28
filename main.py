@@ -1,35 +1,30 @@
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-
-from pprint import pprint
-
-
+from scrips_for_main.log_pr import Log
 import addons.heart_ad
 
-from addons import efict_run_line
-
-from pyrogram.types import ChatPermissions
-
-from scrips_for_main.replase import Rep
-
-import time
 from time import sleep
 import random
 
 app = Client("my_account")
 
-'''@app.on_message(filters.text & filters.private)
-def echo(client, message):
-    message.reply(message.text)
-    app.send_message("me", ":heart:")
-'''
 @app.on_message(filters.private & ~filters.me & filters.text)
 async def bot(client, message):
+    count = 0
     if str(message.chat.id) == '1149270898':
-        print(message.chat.first_name,':', message.text)
+        try:
+
+            if count < 1:
+                Log(message)
+                count += 1
+                string_const = message.text
+            else:
+                pass
+        except UnicodeEncodeError:
+            print(UnicodeEncodeError)
     else:
         print(message.chat.id)
-        print(message.chat.first_name, ':', message.text)
+        print(message.date,message.chat.first_name, ':', message.text)
     # await message.reply(message.text)
 
 @app.on_message(filters.command("heart", prefixes=".") & filters.me)
